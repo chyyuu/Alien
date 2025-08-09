@@ -21,7 +21,8 @@ download:
     		echo "Busybox exists"; \
     	else \
     		echo "Busybox does not exist"; \
-    		wget http://busybox.net/downloads/busybox-$(VERSION).tar.bz2; \
+#    		wget http://busybox.net/downloads/busybox-$(VERSION).tar.bz2; \
+    		wget https://ftp.icm.edu.pl/packages/busybox/busybox-$(VERSION).tar.bz2; \
     		tar -xvf busybox-$(VERSION).tar.bz2 && mv busybox-$(VERSION) $(BB); \
 	fi
 
